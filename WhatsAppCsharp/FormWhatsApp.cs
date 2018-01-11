@@ -41,11 +41,7 @@ namespace WhatsAppCsharp
         {
             signOutToolStripMenuItem.Visible = false;
             panel1.BringToFront();
-            if(Properties.Settings.Default.Remember)
-            {
-                txtBoxPhone.Text = Properties.Settings.Default.Phone;
-                txtBoxPassword.Text = Properties.Settings.Default.Password;
-            }
+
         }
 
         private void exitToolStripMenuItem_Click(object sender, EventArgs e)
@@ -55,14 +51,6 @@ namespace WhatsAppCsharp
 
         private void linkLblRegister_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            using (formRegister form = new formRegister())
-            {
-                if(form.ShowDialog() == DialogResult.OK)
-                {
-                    txtBoxPhone.Text = Properties.Settings.Default.Phone;
-                    txtBoxPassword.Text = Properties.Settings.Default.Password;
-                }
-            }
         }
     }
 

@@ -437,7 +437,7 @@ namespace WhatsAppCsharp {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public AccountsRow FindByAccountID(long AccountID) {
+            public AccountsRow FindByAccountID(string AccountID) {
                 return ((AccountsRow)(this.Rows.Find(new object[] {
                             AccountID})));
             }
@@ -467,7 +467,7 @@ namespace WhatsAppCsharp {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             private void InitClass() {
-                this.columnAccountID = new global::System.Data.DataColumn("AccountID", typeof(long), null, global::System.Data.MappingType.Element);
+                this.columnAccountID = new global::System.Data.DataColumn("AccountID", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnAccountID);
                 this.columnFullName = new global::System.Data.DataColumn("FullName", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnFullName);
@@ -710,7 +710,7 @@ namespace WhatsAppCsharp {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public UsersRow AddUsersRow(long AccountID, long UserID, string FullName) {
+            public UsersRow AddUsersRow(string AccountID, string UserID, string FullName) {
                 UsersRow rowUsersRow = ((UsersRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         AccountID,
@@ -723,7 +723,7 @@ namespace WhatsAppCsharp {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public UsersRow FindByUserID(long UserID) {
+            public UsersRow FindByUserID(string UserID) {
                 return ((UsersRow)(this.Rows.Find(new object[] {
                             UserID})));
             }
@@ -753,9 +753,9 @@ namespace WhatsAppCsharp {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             private void InitClass() {
-                this.columnAccountID = new global::System.Data.DataColumn("AccountID", typeof(long), null, global::System.Data.MappingType.Element);
+                this.columnAccountID = new global::System.Data.DataColumn("AccountID", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnAccountID);
-                this.columnUserID = new global::System.Data.DataColumn("UserID", typeof(long), null, global::System.Data.MappingType.Element);
+                this.columnUserID = new global::System.Data.DataColumn("UserID", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnUserID);
                 this.columnFullName = new global::System.Data.DataColumn("FullName", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnFullName);
@@ -905,9 +905,9 @@ namespace WhatsAppCsharp {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public long AccountID {
+            public string AccountID {
                 get {
-                    return ((long)(this[this.tableAccounts.AccountIDColumn]));
+                    return ((string)(this[this.tableAccounts.AccountIDColumn]));
                 }
                 set {
                     this[this.tableAccounts.AccountIDColumn] = value;
@@ -998,10 +998,10 @@ namespace WhatsAppCsharp {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public long AccountID {
+            public string AccountID {
                 get {
                     try {
-                        return ((long)(this[this.tableUsers.AccountIDColumn]));
+                        return ((string)(this[this.tableUsers.AccountIDColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
                         throw new global::System.Data.StrongTypingException("The value for column \'AccountID\' in table \'Users\' is DBNull.", e);
@@ -1014,9 +1014,9 @@ namespace WhatsAppCsharp {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public long UserID {
+            public string UserID {
                 get {
-                    return ((long)(this[this.tableUsers.UserIDColumn]));
+                    return ((string)(this[this.tableUsers.UserIDColumn]));
                 }
                 set {
                     this[this.tableUsers.UserIDColumn] = value;

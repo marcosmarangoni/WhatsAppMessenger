@@ -36,7 +36,7 @@
             this.btnRequest = new System.Windows.Forms.Button();
             this.grpConfirm = new System.Windows.Forms.GroupBox();
             this.lblConfirmCode = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtBoxCode = new System.Windows.Forms.TextBox();
             this.btnConfirm = new System.Windows.Forms.Button();
             this.groupRequestCode.SuspendLayout();
             this.grpConfirm.SuspendLayout();
@@ -70,7 +70,7 @@
             this.txtBoxPhone.Location = new System.Drawing.Point(92, 19);
             this.txtBoxPhone.Name = "txtBoxPhone";
             this.txtBoxPhone.Size = new System.Drawing.Size(191, 20);
-            this.txtBoxPhone.TabIndex = 1;
+            this.txtBoxPhone.TabIndex = 0;
             this.txtBoxPhone.TextChanged += new System.EventHandler(this.txtBoxPhone_TextChanged);
             // 
             // labelFullName
@@ -87,14 +87,14 @@
             this.txtBoxFullName.Location = new System.Drawing.Point(92, 49);
             this.txtBoxFullName.Name = "txtBoxFullName";
             this.txtBoxFullName.Size = new System.Drawing.Size(191, 20);
-            this.txtBoxFullName.TabIndex = 3;
+            this.txtBoxFullName.TabIndex = 1;
             // 
             // btnRequest
             // 
             this.btnRequest.Location = new System.Drawing.Point(151, 77);
             this.btnRequest.Name = "btnRequest";
             this.btnRequest.Size = new System.Drawing.Size(75, 23);
-            this.btnRequest.TabIndex = 4;
+            this.btnRequest.TabIndex = 2;
             this.btnRequest.Text = "Request";
             this.btnRequest.UseVisualStyleBackColor = true;
             this.btnRequest.Click += new System.EventHandler(this.btnRequest_Click);
@@ -102,7 +102,7 @@
             // grpConfirm
             // 
             this.grpConfirm.Controls.Add(this.btnConfirm);
-            this.grpConfirm.Controls.Add(this.textBox1);
+            this.grpConfirm.Controls.Add(this.txtBoxCode);
             this.grpConfirm.Controls.Add(this.lblConfirmCode);
             this.grpConfirm.Location = new System.Drawing.Point(12, 119);
             this.grpConfirm.Name = "grpConfirm";
@@ -120,19 +120,19 @@
             this.lblConfirmCode.TabIndex = 0;
             this.lblConfirmCode.Text = "Code";
             // 
-            // textBox1
+            // txtBoxCode
             // 
-            this.textBox1.Location = new System.Drawing.Point(92, 24);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(191, 20);
-            this.textBox1.TabIndex = 1;
+            this.txtBoxCode.Location = new System.Drawing.Point(92, 24);
+            this.txtBoxCode.Name = "txtBoxCode";
+            this.txtBoxCode.Size = new System.Drawing.Size(191, 20);
+            this.txtBoxCode.TabIndex = 0;
             // 
             // btnConfirm
             // 
             this.btnConfirm.Location = new System.Drawing.Point(151, 50);
             this.btnConfirm.Name = "btnConfirm";
             this.btnConfirm.Size = new System.Drawing.Size(75, 23);
-            this.btnConfirm.TabIndex = 2;
+            this.btnConfirm.TabIndex = 1;
             this.btnConfirm.Text = "Confirm";
             this.btnConfirm.UseVisualStyleBackColor = true;
             this.btnConfirm.Click += new System.EventHandler(this.button1_Click);
@@ -164,7 +164,7 @@
         private System.Windows.Forms.Label labelPhone;
         private System.Windows.Forms.GroupBox grpConfirm;
         private System.Windows.Forms.Button btnConfirm;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtBoxCode;
         private System.Windows.Forms.Label lblConfirmCode;
     }
 }
